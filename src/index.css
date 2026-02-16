@@ -1,0 +1,13 @@
+@import "tailwindcss";
+body{
+  padding: 0;
+  margin: 0;
+}
+
+/* Navbar */
+.nav{
+  background-color: rgb(202, 223, 223);
+  
+  
+}
+
