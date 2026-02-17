@@ -6,8 +6,31 @@ body{
 
 /* Navbar */
 .nav{
-  background-color: rgb(202, 223, 223);
+  background-color: rgb(219, 228, 228);
   
   
 }
+.none{
+  border: 2px solid rgb(17, 16, 16);
+  width: 400px;
+}
+
+
+/* hero */
+@keyframes float {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-15px) rotate(2deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
 
