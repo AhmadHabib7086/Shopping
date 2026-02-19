@@ -31,15 +31,15 @@ const Navbar = () => {
 
         {/* Links */}
         <ul className="flex flex-col md:flex-row gap-3 md:gap-6 font-medium text-center">
-          <Link to="/">Home</Link>
-          <Link to="/about">About</Link>
-          <Link to="/contact">Contact</Link>
-          <Link to="/item">Items</Link>
+          <Link className=" hover:text-amber-600 " to="/">Home</Link>
+          <Link className=" hover:text-amber-600 " to="/about">About</Link>
+          <Link className=" hover:text-amber-600 "   to="/contact">Contact</Link>
+          <Link className=" hover:text-amber-600 "  to="/item">Items</Link>
         </ul>
 
         {/* Login Button */}
-        <button className="bg-blue-500 text-white px-4 py-2 rounded-lg w-full md:w-auto">
-          Login
+        <button className="bg-blue-400 text-white px-4 py-2 rounded-lg w-full md:w-auto">
+          <a className=" hover:text-black " href="/login">Login</a>
         </button>
 
       </div>

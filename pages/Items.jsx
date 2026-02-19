@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import image from "../assets/1bag.png";
 
 const products = [
@@ -11,16 +12,16 @@ const products = [
 ];
 
 const Items = () => {
+  const navigate = useNavigate();
+
   return (
     <section className="w-full min-h-screen bg-gray-100 py-16 px-6">
       <div className="max-w-7xl mx-auto">
         
-        {/* Heading */}
         <h2 className="text-3xl sm:text-4xl font-bold text-gray-800 text-center">
-          Our Products
+          All Products
         </h2>
 
-        {/* Grid */}
         <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-10">
           
           {products.map((item) => (
@@ -31,7 +32,8 @@ const Items = () => {
               <img
                 src={image}
                 alt={item.name}
-                className="w-full h-40 object-contain"
+                className="w-full h-40 object-contain cursor-pointer"
+                onClick={() => navigate(`/product/${item.id}`)}
               />
 
               <div className="mt-3">
@@ -43,8 +45,11 @@ const Items = () => {
                 </p>
               </div>
 
-              <button className="mt-4 w-full bg-amber-600 text-white py-2 rounded-lg hover:bg-amber-700 transition duration-300 text-sm">
-                Add to Cart
+              <button
+                onClick={() => navigate(`/product/${item.id}`)}
+                className="mt-4 w-full bg-amber-600 text-white py-2 rounded-lg hover:bg-amber-700 transition duration-300 text-sm"
+              >
+                Add to Card
               </button>
             </div>
           ))}
