@@ -6,6 +6,8 @@ const dotenv = require('dotenv')
 const cors = require('cors')
 const cookieParser = require('cookie-parser')
 dotenv.config();
+//ahmadkhan70867086_db_user
+//DlGyu8en3HIXjCQn
 
 
 
